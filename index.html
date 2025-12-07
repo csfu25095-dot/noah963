@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>〇〇〇〇のポートフォリオ | 適応力と計画的実行力</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>【>>1】俺のホムペｗｗｗ（*ﾟ∀ﾟ）アヒャ顔もいるよ</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* CSSリセットと基本設定 */
+        /* CSSリセットと2ちゃんねる基本設定 */
         * {
             margin: 0;
             padding: 0;
@@ -14,238 +14,309 @@
         }
 
         body {
-            font-family: 'Noto Sans JP', sans-serif;
-            color: #333;
-            line-height: 1.8;
-            background-color: #f8f8f8;
+            font-family: 'Roboto Mono', monospace, 'ＭＳ ゴシック', 'MS Gothic';
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.5;
+            background-color: #efefef;
             scroll-behavior: smooth;
         }
 
         a {
             text-decoration: none;
-            color: #1a73e8; /* Google Blue */
+            color: #0000ff;
             transition: color 0.3s;
         }
 
         a:hover {
-            color: #0c57c4;
+            color: #cc0000;
+            text-decoration: underline;
+        }
+        
+        /* 安価リンクのスタイル */
+        .res-number {
+            color: #0000ff;
+            cursor: pointer;
+        }
+        .res-number:hover {
+            color: #cc0000;
+            text-decoration: underline;
         }
 
         /* ヘッダー/ナビゲーション */
         header {
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background-color: #dddddd;
+            border-bottom: 1px solid #cccccc;
+            padding: 8px 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
         nav {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+        
+        .header-controls {
+            display: flex;
+            align-items: center;
+        }
 
         .logo {
-            font-size: 1.5rem;
+            font-family: 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
+            font-size: 1.1rem;
             font-weight: 700;
-            color: #333;
+            color: #000000;
         }
 
+        .nav-links {
+            font-size: 0.9rem;
+            margin-left: 20px;
+        }
         .nav-links a {
-            margin-left: 25px;
-            font-weight: 500;
-            color: #555;
-            padding: 5px 0;
-            position: relative;
+            margin-left: 15px;
+            color: #0000ff;
         }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 0;
-            height: 2px;
-            background-color: #1a73e8;
-            transition: width 0.3s;
+        .nav-links a:hover {
+            color: #cc0000;
         }
-
-        .nav-links a:hover::after {
-            width: 100%;
+        
+        /* スレ立てボタン */
+        .thread-button {
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+            color: #000000;
+            padding: 4px 10px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            margin-left: 20px;
+            transition: background-color 0.2s;
         }
-
+        .thread-button:hover {
+            background-color: #ffffff;
+            border-color: #0000ff;
+            color: #0000ff;
+        }
+        
         /* メインコンテナ */
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            max-width: 800px;
+            margin: 15px auto;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
         }
 
-        /* セクション共通スタイル */
-        section {
-            padding: 60px 0;
-            margin-bottom: 30px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        /* レス全体を囲むセクション */
+        .res-section {
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px dashed #cccccc;
+        }
+        .res-section:last-of-type {
+            border-bottom: none;
         }
 
+        /* スレタイ風のレス番号見出し */
         h2 {
-            font-size: 2rem;
+            font-size: 1.2rem;
             font-weight: 700;
-            text-align: center;
-            margin-bottom: 40px;
-            color: #1a73e8;
+            color: #cc0000;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 5px;
             position: relative;
         }
 
-        h2::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background-color: #1a73e8;
-            margin: 10px auto 0;
+        h2::before {
+            content: '>>';
+            color: #0000ff;
+            margin-right: 5px;
         }
-
-        /* ヒーローセクション */
-        #hero {
-            padding: 80px 20px;
-            text-align: center;
-            background-color: #f0f4f8; /* Light Blue/Gray */
-            border-radius: 0;
-            box-shadow: none;
-        }
-
-        #hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            font-weight: 700;
-            color: #333;
-        }
-
-        #hero p {
-            font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .contact-button {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #1a73e8;
-            color: #fff;
-            border-radius: 5px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
-
-        .contact-button:hover {
-            background-color: #0c57c4;
-        }
-
-        /* 自己紹介/ガクチカ */
-        #about {
-            padding: 60px 40px;
-        }
-
-        .about-content {
-            display: flex;
-            gap: 40px;
-            align-items: flex-start;
-        }
-
-        .profile-text {
-            flex: 2;
-        }
-
-        .profile-text h3 {
-            font-size: 1.5rem;
+        
+        /* レス書き込み部分のスタイル */
+        .res-entry {
             margin-bottom: 15px;
-            color: #333;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
+            padding: 10px 0;
+            border-bottom: 1px dotted #e0e0e0;
+        }
+
+        .res-head {
+            color: #555555;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            padding-left: 10px;
+        }
+        .res-head span.name {
+            color: #008000;
+            font-weight: bold;
+        }
+        .res-head span.date {
+            color: #555555;
+            margin-right: 10px;
+        }
+
+        .res-body-content {
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin-top: 10px;
+            margin-left: 20px;
+            white-space: pre-wrap;
+            position: relative;
         }
 
         .gacuchika-box {
-            background-color: #f9f9f9;
-            border-left: 5px solid #1a73e8;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 4px;
+            background-color: #f0f0f0;
+            border-left: 5px solid #009900;
+            padding: 15px;
+            margin-top: 15px;
+            white-space: pre-wrap;
         }
 
         .gacuchika-box strong {
             display: block;
-            margin-bottom: 10px;
-            color: #1a73e8;
-        }
-
-        /* スキルセクション */
-        #skills {
-            text-align: center;
-        }
-
-        .skill-grid {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-top: 20px;
-        }
-
-        .skill-item {
-            background-color: #f0f4f8;
-            padding: 20px;
-            border-radius: 8px;
-            width: 200px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-
-        .skill-item h4 {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        .skill-item p {
-            font-size: 0.9rem;
-            color: #555;
+            margin-bottom: 8px;
+            color: #cc0000;
+            font-size: 1rem;
         }
         
-        /* コンタクトセクション */
+        /* 連絡先セクションをレス投稿フォーム風に */
         #contact {
-            text-align: center;
-            padding: 40px 0;
-            background-color: #f0f4f8;
-        }
-        
-        .contact-info {
-            margin-top: 20px;
-            font-size: 1.1rem;
-        }
-
-        /* フッター */
-        footer {
-            text-align: center;
             padding: 20px;
-            background-color: #333;
-            color: #eee;
-            font-size: 0.9rem;
+            border: 3px solid #cc0000; /* 赤枠強調 */
+            background-color: #ffffff;
+        }
+        #contact h2 {
+             font-size: 1.2rem;
+             color: #000000;
+             border-bottom: 1px solid #cc0000;
+        }
+        #contact table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        #contact td {
+            padding: 5px;
+        }
+        #contact input[type="text"],
+        #contact textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #999;
+            font-family: 'ＭＳ ゴシック', 'MS Gothic', monospace;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        #contact textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        #contact button {
+            background-color: #0000ff;
+            color: #ffffff;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+        #contact button:hover {
+            background-color: #008000;
         }
 
-        /* レスポンシブ対応 */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            .about-content {
-                flex-direction: column;
-            }
+        /* AAスタイル */
+        .aa {
+            font-family: 'ＭＳ ゴシック', 'MS Gothic', 'Roboto Mono', monospace;
+            font-size: 13px;
+            line-height: 1.2;
+            white-space: pre-wrap;
+            margin: 10px auto;
+            text-align: left;
+            color: #009900;
+        }
+
+        /* --- スレ立てモーダルウィンドウのCSS (省略せず維持) --- */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .thread-form-box {
+            background-color: #ffffff;
+            border: 3px solid #ff0000;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+            font-family: 'ＭＳ ゴシック', 'MS Gothic', monospace;
+            font-size: 14px;
+        }
+
+        .thread-form-box h3 {
+            color: #ff0000;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .thread-form-box table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        .thread-form-box td {
+            padding: 5px;
+            border: 1px solid #cccccc;
+        }
+
+        .thread-form-box input[type="text"],
+        .thread-form-box textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #999;
+            font-family: 'ＭＳ ゴシック', 'MS Gothic', monospace;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .thread-form-box textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .thread-form-box button {
+            background-color: #0000ff;
+            color: #ffffff;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+            transition: background-color 0.2s;
+        }
+
+        .thread-form-box button:hover {
+            background-color: #008000;
+        }
+        .thread-form-box button.close-button {
+            background-color: #cc0000;
+        }
+        .thread-form-box button.close-button:hover {
+             background-color: #ff3333;
         }
     </style>
 </head>
@@ -253,77 +324,303 @@
 
     <header>
         <nav>
-            <div class="logo">〇〇〇〇 / ポートフォリオ</div>
-            <div class="nav-links">
-                <a href="#about">自己紹介</a>
-                <a href="#skills">スキル</a>
-                <a href="#contact">連絡先</a>
+            <div class="logo">＼(^o^)／俺の最強ホムペｗｗｗｗｗｗｗ</div>
+            <div class="header-controls">
+                <div class="nav-links">
+                    <a href="#about">自己紹介</a>
+                    <a href="#skills">オレツエー要素</a>
+                    <a href="#contact">レス投稿</a>
+                </div>
+                <button class="thread-button" onclick="openModal()">新規スレ作成</button>
             </div>
         </nav>
     </header>
 
     <div class="container">
         
-        <section id="hero">
-            <h1>未知の課題に挑み、計画と実行で成果を生み出す</h1>
-            <p>計画遂行能力と適応力を強みとする大学生のポートフォリオサイトです。</p>
-            <a href="#contact" class="contact-button">お問い合わせはこちら</a>
+        <section id="hero" class="res-section">
+            <h1>【悲報】ワイ、チート級の適応力で目標達成ｗｗｗｗｗｗ</h1>
+            <p>（*ﾟ∀ﾟ）アヒャｗｗｗ大学生のポートフォリオ</p>
+            <a href="#contact" class="contact-button">レスを書き込む</a>
+            <pre class="aa">
+　　　　　　　　ｱﾋｬ
+　　＿　∧ ∧
+／＼　 (*ﾟ∀ﾟ)＼
+＼／|￣ U U ￣|＼
+　 ＼|　 つー 　 |
+　　　 ￣￣￣￣</pre>
         </section>
 
-        <section id="about">
-            <h2>自己紹介 & My Challenge</h2>
-            <div class="about-content">
-                <div class="profile-text">
-                    <h3>学習に対する姿勢</h3>
-                    <p>〇〇大学〇〇学部〇〇学科に所属しています。常に新しい知識や技術に対して好奇心を持ち、効率的な学習方法を見つけることに価値を置いています。特に、目標を設定した後、それを達成するための実行計画を練り、実行に移すことを得意としています。</p>
-                    
-                    <div class="gacuchika-box">
-                        <strong>学生時代に注力したこと（適応力と計画的実行力）</strong>
-                        <p>私が学生時代に注力したのは、高校吹奏楽部での**トロンボーンとバストロンボーンへの挑戦**です。</p>
-                        <p>三年ぶりに管楽器を再開し音色が不安定な中、「低音域からチームに貢献したい」と**自らバストロンボーンへの挑戦を決断**しました。いち早くチームの戦力となるため、「両楽器で安定した響きを早期に習得する」ことを目標に掲げました。</p>
-                        <p>この目標達成のため、部に来た**プロの指導者へ積極的に質問**し、ブランク解消と低音強化に必要な基礎練習法を徹底的に聞き出しました。そのアドバイスを基に、**練習時間を「量より質」で細分化する計画**を立て、毎日客観的な評価を取り入れながら実行しました。</p>
-                        <p>結果、演奏会では両楽器で早期に安定した音色を出せるようになり、チームの土台を支えることに貢献できました。この経験から、**目標達成に向け自ら挑戦を選び、専門知識を活用して計画的に実行する適応力**を培いました。</p>
-                    </div>
+        <div id="res1" class="res-entry">
+            <div class="res-head">
+                1 ：<span class="name">宮田楓也＠日大理工応情</span>[]：<span class="date">2025/12/01(月) 10:00:00</span> ID:MIYATA-F <a class="res-number" onclick="quoteRes(1)">**>>1**</a>
+            </div>
+            <div class="res-body-content">
+                <h3>なんかキタコレ！学習へのスタンス</h3>
+                <p>日本大学理工学部応用情報工学科に所属してるんだお。新しい知識や技術、マジパネェって感じでいつも漁ってるｗｗｗ。目標決めたら、そこまでの道のり全部設計して、実行するの得意なんだぜ？ドヤ顔(｀・ω・´)キリッ！</p>
+                
+                <div class="gacuchika-box">
+                    <strong>【ガチ】俺の学生時代、伝説すぎワロタｗｗｗ（適応力と計画的実行力）</strong>
+                    <p>私が学生時代に注力したのは、高校吹奏楽部での**トロンボーンとバストロンボーンへの挑戦**です。</p>
+                    <p>三年ぶりに管楽器を再開し音色が不安定な中、「低音域からチームに貢献したい」と**自らバストロンボーンへの挑戦を決断**しました。これ、マジレスな。いち早くチームの戦力となるため、「両楽器で安定した響きを早期に習得する」という**リア充目標**を掲げた。</p>
+                    <p>この目標達成のため、部に来た**プロの指導者へ積極的に質問**し、ブランク解消と低音強化に必要な基礎練習法を徹底的に聞き出した。**プロに凸**したんだぜ？そのアドバイスを基に、**練習時間を「量より質」で細分化する計画**を立て、毎日客観的な評価を取り入れながら実行した。これが俺のPDCA！</p>
+                    <p>結果、演奏会では両楽器で早期に安定した音色を出せるようになり、チームの土台を支えることに貢献できた。この経験から、**目標達成に向け自ら挑戦を選び、専門知識を活用して計画的に実行する適応力**を培ったんだぜ。つまり、俺は神！</p>
+                    <pre class="aa">
+  　　　＿＿＿_∧∧　　／￣￣￣￣￣￣￣￣
+　～'　＿＿__(,,ﾟДﾟ)＜　逝ってよし！
+　　 ＵU 　 　Ｕ U　　　＼＿＿＿＿＿＿＿＿
+</pre>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="skills">
-            <h2>スキルと強み</h2>
-            <div class="skill-grid">
-                <div class="skill-item">
-                    <h4>計画的実行力</h4>
-                    <p>目標設定から逆算し、具体的なタスクと期限を設定する能力。自作した練習計画表など、計画を形にする力。</p>
-                </div>
-                <div class="skill-item">
-                    <h4>適応力 / 学習意欲</h4>
-                    <p>未経験のバストロンボーンに挑戦したように、新しい環境や課題に対し、主体的に知識を取り込み迅速に適応する力。</p>
-                </div>
-                <div class="skill-item">
-                    <h4>課題解決志向</h4>
-                    <p>自分の感覚だけでなく、プロの指導や録音など客観的な評価を取り入れ、問題の本質を見極める志向。</p>
-                </div>
-                <div class="skill-item">
-                    <h4>フォロワーシップ</h4>
-                    <p>チーム（部）の成功のため、低音域という「土台」を支える役割を自ら選び、地道な努力で貢献した貢献意欲。</p>
+        <div id="res2" class="res-entry">
+            <div class="res-head">
+                2 ：<span class="name">宮田楓也＠日大理工応情</span>[]：<span class="date">2025/12/01(月) 10:00:05</span> ID:MIYATA-F <a class="res-number" onclick="quoteRes(2)">**>>2**</a>
+            </div>
+            <div class="res-body-content">
+                <h2>オレのチート能力（スキルと強み）</h2>
+                <div class="skill-grid">
+                    <div class="skill-item"><h4>(ﾟ∀ﾟ)計画・実行力</h4><p>目標から逆算してタスク化。おｋ？完璧な実行マニュアルを作成するよ。</p></div>
+                    <div class="skill-item"><h4>（´・ω・｀）適応力</h4><p>未経験楽器も余裕でしたｗｗｗ新しいことでもすぐマスターするよ！</p></div>
+                    <div class="skill-item"><h4>（#^ω^）分析力</h4><p>感覚じゃなくて、**プロの意見とデータ**を信じる。これ、常識な？情弱乙！</p></div>
+                    <div class="skill-item"><h4>(´･ω･`)ﾉｼ 支え屋</h4><p>チームの土台を影で支える。俺がいなきゃ成り立たないんだからねっ！</p></div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div id="res3" class="res-entry">
+            <div class="res-head">
+                3 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:03:15</span> ID:ABCD-1234 <a class="res-number" onclick="quoteRes(3)">**>>3**</a>
+            </div>
+            <div class="res-body-content">
+                <p>長文乙ｗｗｗトロンボーンと就活関係あんの？</p>
+                <p>マジレスすると、**>>1**のPDCAとかいうやつ、普通に生きてりゃ誰でもやってるだろ。大したことなくてワロタｗｗｗ</p>
+            </div>
+        </div>
+
+        <div id="res4" class="res-entry">
+            <div class="res-head">
+                4 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:04:40</span> ID:EFGH-5678 <a class="res-number" onclick="quoteRes(4)">**>>4**</a>
+            </div>
+            <div class="res-body-content">
+                <p>いや、**>>3**は情弱。ブランクからプロに聞くっていう行動力と、それをPDCAって言語化してるのは偉いだろ。</p>
+                <p>しかもバストロもやってんの？すげーな。**>>1**はスペック高いんじゃね？</p>
+            </div>
+        </div>
+        
+        <div id="res5" class="res-entry">
+            <div class="res-head">
+                5 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:06:01</span> ID:Giko-0001 <a class="res-number" onclick="quoteRes(5)">**>>5**</a>
+            </div>
+            <div class="res-body-content">
+                <p>俺、このスレ応援するよ！</p>
+                <pre class="aa">
+ 　　　　　　　　　　　　　∩＿＿＿∩
+　　　　　　　　　　　　　|ノ　　　ヽ　|
+　　　　　　　　　　　　 /⌒ノ"~ヽ⌒ i
+　　　　　　　　　　　　|　(●)　(●)　|
+　　　　　　　　　　　　|　 (_人_)　　 |
+　　　　　　　　　　　　|　　｀ ⌒´　　|
+　　　　　　　　　　　　ヽ　　　　　　/
+　　　　　　　　　　　　　ヽ＿＿ ノ
+</pre>
+            </div>
+        </div>
+        
+        <div id="res6" class="res-entry">
+            <div class="res-head">
+                6 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:08:30</span> ID:HAHA-6666 <a class="res-number" onclick="quoteRes(6)">**>>6**</a>
+            </div>
+            <div class="res-body-content">
+                <p>トロンボーンとか、楽器なんて趣味だろ。</p>
+                <p>情報工学科なら、**「俺はPythonで〇〇作って、アルゴリズムを改善した」**とか、**「応用情報技術者試験に合格した」**とか、**技術的な実績**でオレツエーしろよ。</p>
+                <p>楽器の話しかねーのかよｗｗｗまさか情弱！？</p>
+            </div>
+        </div>
+
+        <div id="res7" class="res-entry">
+            <div class="res-head">
+                7 ：<span class="name">宮田楓也＠日大理工応情</span>[]：<span class="date">2025/12/01(月) 10:10:05</span> ID:MIYATA-F <a class="res-number" onclick="quoteRes(7)">**>>7**</a>
+            </div>
+            <div class="res-body-content">
+                <p>えーと、**>>6**の指摘はごもっともっすね。マジレス感謝！</p>
+                <p>技術的な強みについては**>>2**に軽く書いてるけど、確かに具体的な成果がないとメシウマじゃないっすね。</p>
+                <p>現在、情報工学の学習過程での**具体的な制作物**をポートフォリオに組み込み中なんで、完成したら報告させてもらうっす！</p>
+                <p>（´・ω・｀）しょぼーん。技術面もがんばるお！</p>
+            </div>
+        </div>
+        
+        <div id="res8" class="res-entry">
+            <div class="res-head">
+                8 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:12:45</span> ID:TARO-0000 <a class="res-number" onclick="quoteRes(8)">**>>8**</a>
+            </div>
+            <div class="res-body-content">
+                <p>トロンボーンの話は、**課題解決能力や継続性のアピール**として十分伝わったよ。**>>1**は頭の回転早そうだな。</p>
+                <p>技術的な成果は、**インターン**とかで得ると最強だから、頑張って！</p>
+                <p>つーかこのポートフォリオのノリ、マジでワロタｗｗｗ</p>
+            </div>
+        </div>
+        
+        <div id="res9" class="res-entry">
+            <div class="res-head">
+                9 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:15:00</span> ID:Owari-0000 <a class="res-number" onclick="quoteRes(9)">**>>9**</a>
+            </div>
+            <div class="res-body-content">
+                <p>ageとくね。落ちたらまた立てろよ！</p>
+            </div>
+        </div>
 
         <section id="contact">
-            <h2>お問い合わせ・ご連絡</h2>
-            <p>私の強みである計画的実行力と適応力は、貴社の業務においても貢献できると確信しております。ぜひ一度、お話させていただければ幸いです。</p>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                <p>SNS/GitHub: (リンクを追記)</p>
-            </div>
+            <h2>>>10: レス投稿フォーム</h2>
+            <p>オレの最強スキルにマジレスするもよし、メシウマ案件を提示するもよし！</p>
+            <table>
+                <tr>
+                    <td>名前:</td>
+                    <td><input type="text" id="contactName" value="" placeholder="空欄で「名無しさん」"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" id="contactEmail" placeholder="任意"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">本文:</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea id="contactBody" placeholder="（´A｀）本文を書き込むんだ..."></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button onclick="submitContactRes()">書き込み（送信）</button>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: #cc0000;">※この書き込みはデモであり、ポートフォリオサイト管理者には実際には送信されません。</p>
         </section>
 
     </div>
 
     <footer>
-        <p>&copy; 2025 〇〇〇〇 Portfolio. All Rights Reserved.</p>
+        <p>（´・ω・｀）しょぼーん。無断転載禁止（建前）</p>
+        <p>（　´∀｀）つ旦~~ お茶どうぞ</p>
     </footer>
 
+    <div id="threadModal" class="modal-overlay">
+        <div class="thread-form-box">
+            <h3>( ﾟДﾟ)＜新規スレ立てはコチラ！</h3>
+            <table>
+                <tr>
+                    <td>名前:</td>
+                    <td><input type="text" id="threadName" value="宮田楓也＠日大理工応情"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" id="threadEmail" placeholder="メシウマなアドレス希望ｗｗｗ"></td>
+                </tr>
+                <tr>
+                    <td>スレタイ:</td>
+                    <td><input type="text" id="threadTitle" placeholder="【>>1】タイトルをしっかり書けよ！"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">本文:</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea id="threadBody" placeholder="（´・ω・｀）本文を書き込むんだ..."></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button onclick="submitThread()">スレを立てる</button>
+            <button class="close-button" onclick="closeModal()">閉じる</button>
+        </div>
+    </div>
+
+    <script>
+        // --- モーダル制御関数（前回と同じ） ---
+        const modal = document.getElementById('threadModal');
+        
+        function openModal() {
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function submitThread() {
+            const name = document.getElementById('threadName').value;
+            const title = document.getElementById('threadTitle').value;
+            const body = document.getElementById('threadBody').value;
+            
+            if (title.trim() === '' || body.trim() === '') {
+                alert('（´A｀）スレタイか本文が空だぞ！しっかり書けよ！');
+                return;
+            }
+
+            const result = `(ﾟ∀ﾟ) 成功！\n\n【タイトル】 ${title}\n【名前】 ${name}\n【本文】\n${body}\n\nこの情報はポートフォリオのコンセプトデモです。実際に外部に送信はされません。`;
+            alert(result);
+            
+            document.getElementById('threadTitle').value = '';
+            document.getElementById('threadEmail').value = '';
+            document.getElementById('threadBody').value = '';
+            closeModal();
+        }
+
+        // --- 安価（アンカー）ギミック ---
+        function quoteRes(resNumber) {
+            // 対象のレス番号に対応する要素（例: res1, res2...）を取得
+            const resElement = document.getElementById(`res${resNumber}`);
+            if (!resElement) {
+                alert(`>>${resNumber} のレスは見つからないんだお...`);
+                return;
+            }
+
+            // レスの内容（本文）を取得
+            // res-body-content内のテキストを取得する
+            const resBodyContent = resElement.querySelector('.res-body-content');
+            let resText = resBodyContent.innerText.trim();
+            
+            // 長すぎる場合は少し短縮
+            if (resText.length > 200) {
+                resText = resText.substring(0, 200) + '...';
+            }
+
+            // 引用形式に整形
+            const quote = `>>${resNumber}\n> ${resText.replace(/\n/g, '\n> ')}\n\n`;
+
+            // 問い合わせフォームの本文（textarea）に引用内容をセット
+            const contactBody = document.getElementById('contactBody');
+            
+            // 既に本文に何か書かれていたら改行して追加、なければそのまま
+            contactBody.value = contactBody.value.trim() === '' ? quote : contactBody.value + '\n\n' + quote;
+            
+            // フォームまでスムーズにスクロール
+            const contactSection = document.getElementById('contact');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+
+            // フォームにフォーカス
+            contactBody.focus();
+        }
+        
+        // --- 連絡先フォームの擬似送信処理 ---
+        function submitContactRes() {
+            const name = document.getElementById('contactName').value || '名無しさん';
+            const body = document.getElementById('contactBody').value;
+            const email = document.getElementById('contactEmail').value;
+
+            if (body.trim() === '') {
+                alert('（´A｀）本文が空だぞ！何も書かないのか？');
+                return;
+            }
+
+            // 擬似的にレス投稿成功メッセージを表示
+            const result = `(ﾟ∀ﾟ) 書き込み完了！\n\n【名前】 ${name}\n【E-mail】 ${email}\n【本文】\n${body}\n\nこの書き込みはデモであり、実際には送信されません。`;
+            alert(result);
+
+            // フォームをリセット
+            document.getElementById('contactName').value = '';
+            document.getElementById('contactEmail').value = '';
+            document.getElementById('contactBody').value = '';
+        }
+
+    </script>
 </body>
 </html>
