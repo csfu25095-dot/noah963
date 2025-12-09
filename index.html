@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【>>1】俺のホムペｗｗｗ（*ﾟ∀ﾟ）アヒャ顔もいるよ</title>
+    <title>【>>1】ワイのホムペｗｗｗ（*ﾟ∀ﾟ）アヒャ顔もいるで</title>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* CSSリセットと2ちゃんねる基本設定 */
@@ -182,6 +182,41 @@
             color: #cc0000;
             font-size: 1rem;
         }
+
+        /* --- NEW: プロフィール欄の追加 --- */
+        .profile-box {
+            background-color: #ffffdd; /* 少し黄色っぽい背景で目立たせる */
+            border: 2px solid #ffcc00; /* 黄色枠で囲む */
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            font-family: 'ＭＳ ゴシック', 'MS Gothic', monospace;
+            font-size: 14px;
+        }
+        .profile-box h2 {
+            font-size: 1.2rem;
+            color: #ff0000;
+            margin-bottom: 10px;
+            border-bottom: 2px dashed #ffcc00;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+        .profile-box h2::before {
+            content: '【公式】';
+            color: #000080;
+        }
+        .profile-item {
+            display: flex;
+            margin-bottom: 5px;
+            line-height: 1.6;
+        }
+        .profile-item strong {
+            flex-basis: 120px;
+            color: #000080; /* 濃い青 */
+            font-weight: 700;
+        }
+        .profile-item span {
+            flex-grow: 1;
+        }
         
         /* 連絡先セクションをレス投稿フォーム風に */
         #contact {
@@ -324,11 +359,11 @@
 
     <header>
         <nav>
-            <div class="logo">＼(^o^)／俺の最強ホムペｗｗｗｗｗｗｗ</div>
+            <div class="logo">＼(^o^)／ワイの最強ホムペｗｗｗｗｗｗｗ</div>
             <div class="header-controls">
                 <div class="nav-links">
-                    <a href="#about">自己紹介</a>
-                    <a href="#skills">オレツエー要素</a>
+                    <a href="#profile">プロフィール</a>
+                    <a href="#skills">ワイの能力</a>
                     <a href="#contact">レス投稿</a>
                 </div>
                 <button class="thread-button" onclick="openModal()">新規スレ作成</button>
@@ -342,285 +377,3 @@
             <h1>【悲報】ワイ、チート級の適応力で目標達成ｗｗｗｗｗｗ</h1>
             <p>（*ﾟ∀ﾟ）アヒャｗｗｗ大学生のポートフォリオ</p>
             <a href="#contact" class="contact-button">レスを書き込む</a>
-            <pre class="aa">
-　　　　　　　　ｱﾋｬ
-　　＿　∧ ∧
-／＼　 (*ﾟ∀ﾟ)＼
-＼／|￣ U U ￣|＼
-　 ＼|　 つー 　 |
-　　　 ￣￣￣￣</pre>
-        </section>
-
-        <div id="res1" class="res-entry">
-            <div class="res-head">
-                1 ：<span class="name">宮田楓也＠日大理工応情</span>[]：<span class="date">2025/12/01(月) 10:00:00</span> ID:MIYATA-F <a class="res-number" onclick="quoteRes(1)">**>>1**</a>
-            </div>
-            <div class="res-body-content">
-                <h3>なんかキタコレ！学習へのスタンス</h3>
-                <p>日本大学理工学部応用情報工学科に所属してるんだお。新しい知識や技術、マジパネェって感じでいつも漁ってるｗｗｗ。目標決めたら、そこまでの道のり全部設計して、実行するの得意なんだぜ？ドヤ顔(｀・ω・´)キリッ！</p>
-                
-                <div class="gacuchika-box">
-                    <strong>【ガチ】俺の学生時代、伝説すぎワロタｗｗｗ（適応力と計画的実行力）</strong>
-                    <p>私が学生時代に注力したのは、高校吹奏楽部での**トロンボーンとバストロンボーンへの挑戦**です。</p>
-                    <p>三年ぶりに管楽器を再開し音色が不安定な中、「低音域からチームに貢献したい」と**自らバストロンボーンへの挑戦を決断**しました。これ、マジレスな。いち早くチームの戦力となるため、「両楽器で安定した響きを早期に習得する」という**リア充目標**を掲げた。</p>
-                    <p>この目標達成のため、部に来た**プロの指導者へ積極的に質問**し、ブランク解消と低音強化に必要な基礎練習法を徹底的に聞き出した。**プロに凸**したんだぜ？そのアドバイスを基に、**練習時間を「量より質」で細分化する計画**を立て、毎日客観的な評価を取り入れながら実行した。これが俺のPDCA！</p>
-                    <p>結果、演奏会では両楽器で早期に安定した音色を出せるようになり、チームの土台を支えることに貢献できた。この経験から、**目標達成に向け自ら挑戦を選び、専門知識を活用して計画的に実行する適応力**を培ったんだぜ。つまり、俺は神！</p>
-                    <pre class="aa">
-  　　　＿＿＿_∧∧　　／￣￣￣￣￣￣￣￣
-　～'　＿＿__(,,ﾟДﾟ)＜　逝ってよし！
-　　 ＵU 　 　Ｕ U　　　＼＿＿＿＿＿＿＿＿
-</pre>
-                </div>
-            </div>
-        </div>
-
-        <div id="res2" class="res-entry">
-            <div class="res-head">
-                2 ：<span class="name">宮田楓也＠日大理工応情</span>[]：<span class="date">2025/12/01(月) 10:00:05</span> ID:MIYATA-F <a class="res-number" onclick="quoteRes(2)">**>>2**</a>
-            </div>
-            <div class="res-body-content">
-                <h2>オレのチート能力（スキルと強み）</h2>
-                <div class="skill-grid">
-                    <div class="skill-item"><h4>(ﾟ∀ﾟ)計画・実行力</h4><p>目標から逆算してタスク化。おｋ？完璧な実行マニュアルを作成するよ。</p></div>
-                    <div class="skill-item"><h4>（´・ω・｀）適応力</h4><p>未経験楽器も余裕でしたｗｗｗ新しいことでもすぐマスターするよ！</p></div>
-                    <div class="skill-item"><h4>（#^ω^）分析力</h4><p>感覚じゃなくて、**プロの意見とデータ**を信じる。これ、常識な？情弱乙！</p></div>
-                    <div class="skill-item"><h4>(´･ω･`)ﾉｼ 支え屋</h4><p>チームの土台を影で支える。俺がいなきゃ成り立たないんだからねっ！</p></div>
-                </div>
-            </div>
-        </div>
-
-        <div id="res3" class="res-entry">
-            <div class="res-head">
-                3 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:03:15</span> ID:ABCD-1234 <a class="res-number" onclick="quoteRes(3)">**>>3**</a>
-            </div>
-            <div class="res-body-content">
-                <p>長文乙ｗｗｗトロンボーンと就活関係あんの？</p>
-                <p>マジレスすると、**>>1**のPDCAとかいうやつ、普通に生きてりゃ誰でもやってるだろ。大したことなくてワロタｗｗｗ</p>
-            </div>
-        </div>
-
-        <div id="res4" class="res-entry">
-            <div class="res-head">
-                4 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:04:40</span> ID:EFGH-5678 <a class="res-number" onclick="quoteRes(4)">**>>4**</a>
-            </div>
-            <div class="res-body-content">
-                <p>いや、**>>3**は情弱。ブランクからプロに聞くっていう行動力と、それをPDCAって言語化してるのは偉いだろ。</p>
-                <p>しかもバストロもやってんの？すげーな。**>>1**はスペック高いんじゃね？</p>
-            </div>
-        </div>
-        
-        <div id="res5" class="res-entry">
-            <div class="res-head">
-                5 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:06:01</span> ID:Giko-0001 <a class="res-number" onclick="quoteRes(5)">**>>5**</a>
-            </div>
-            <div class="res-body-content">
-                <p>俺、このスレ応援するよ！</p>
-                <pre class="aa">
- 　　　　　　　　　　　　　∩＿＿＿∩
-　　　　　　　　　　　　　|ノ　　　ヽ　|
-　　　　　　　　　　　　 /⌒ノ"~ヽ⌒ i
-　　　　　　　　　　　　|　(●)　(●)　|
-　　　　　　　　　　　　|　 (_人_)　　 |
-　　　　　　　　　　　　|　　｀ ⌒´　　|
-　　　　　　　　　　　　ヽ　　　　　　/
-　　　　　　　　　　　　　ヽ＿＿ ノ
-</pre>
-            </div>
-        </div>
-        
-        <div id="res6" class="res-entry">
-            <div class="res-head">
-                6 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:08:30</span> ID:HAHA-6666 <a class="res-number" onclick="quoteRes(6)">**>>6**</a>
-            </div>
-            <div class="res-body-content">
-                <p>トロンボーンとか、楽器なんて趣味だろ。</p>
-                <p>情報工学科なら、**「俺はPythonで〇〇作って、アルゴリズムを改善した」**とか、**「応用情報技術者試験に合格した」**とか、**技術的な実績**でオレツエーしろよ。</p>
-                <p>楽器の話しかねーのかよｗｗｗまさか情弱！？</p>
-            </div>
-        </div>
-
-        <div id="res7" class="res-entry">
-            <div class="res-head">
-                7 ：<span class="name">宮田楓也＠日大理工応情</span>[]：<span class="date">2025/12/01(月) 10:10:05</span> ID:MIYATA-F <a class="res-number" onclick="quoteRes(7)">**>>7**</a>
-            </div>
-            <div class="res-body-content">
-                <p>えーと、**>>6**の指摘はごもっともっすね。マジレス感謝！</p>
-                <p>技術的な強みについては**>>2**に軽く書いてるけど、確かに具体的な成果がないとメシウマじゃないっすね。</p>
-                <p>現在、情報工学の学習過程での**具体的な制作物**をポートフォリオに組み込み中なんで、完成したら報告させてもらうっす！</p>
-                <p>（´・ω・｀）しょぼーん。技術面もがんばるお！</p>
-            </div>
-        </div>
-        
-        <div id="res8" class="res-entry">
-            <div class="res-head">
-                8 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:12:45</span> ID:TARO-0000 <a class="res-number" onclick="quoteRes(8)">**>>8**</a>
-            </div>
-            <div class="res-body-content">
-                <p>トロンボーンの話は、**課題解決能力や継続性のアピール**として十分伝わったよ。**>>1**は頭の回転早そうだな。</p>
-                <p>技術的な成果は、**インターン**とかで得ると最強だから、頑張って！</p>
-                <p>つーかこのポートフォリオのノリ、マジでワロタｗｗｗ</p>
-            </div>
-        </div>
-        
-        <div id="res9" class="res-entry">
-            <div class="res-head">
-                9 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:15:00</span> ID:Owari-0000 <a class="res-number" onclick="quoteRes(9)">**>>9**</a>
-            </div>
-            <div class="res-body-content">
-                <p>ageとくね。落ちたらまた立てろよ！</p>
-            </div>
-        </div>
-
-        <section id="contact">
-            <h2>>>10: レス投稿フォーム</h2>
-            <p>オレの最強スキルにマジレスするもよし、メシウマ案件を提示するもよし！</p>
-            <table>
-                <tr>
-                    <td>名前:</td>
-                    <td><input type="text" id="contactName" value="" placeholder="空欄で「名無しさん」"></td>
-                </tr>
-                <tr>
-                    <td>E-mail:</td>
-                    <td><input type="text" id="contactEmail" placeholder="任意"></td>
-                </tr>
-                <tr>
-                    <td colspan="2">本文:</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <textarea id="contactBody" placeholder="（´A｀）本文を書き込むんだ..."></textarea>
-                    </td>
-                </tr>
-            </table>
-            <button onclick="submitContactRes()">書き込み（送信）</button>
-            <p style="margin-top: 10px; font-size: 0.8rem; color: #cc0000;">※この書き込みはデモであり、ポートフォリオサイト管理者には実際には送信されません。</p>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>（´・ω・｀）しょぼーん。無断転載禁止（建前）</p>
-        <p>（　´∀｀）つ旦~~ お茶どうぞ</p>
-    </footer>
-
-    <div id="threadModal" class="modal-overlay">
-        <div class="thread-form-box">
-            <h3>( ﾟДﾟ)＜新規スレ立てはコチラ！</h3>
-            <table>
-                <tr>
-                    <td>名前:</td>
-                    <td><input type="text" id="threadName" value="宮田楓也＠日大理工応情"></td>
-                </tr>
-                <tr>
-                    <td>E-mail:</td>
-                    <td><input type="text" id="threadEmail" placeholder="メシウマなアドレス希望ｗｗｗ"></td>
-                </tr>
-                <tr>
-                    <td>スレタイ:</td>
-                    <td><input type="text" id="threadTitle" placeholder="【>>1】タイトルをしっかり書けよ！"></td>
-                </tr>
-                <tr>
-                    <td colspan="2">本文:</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <textarea id="threadBody" placeholder="（´・ω・｀）本文を書き込むんだ..."></textarea>
-                    </td>
-                </tr>
-            </table>
-            <button onclick="submitThread()">スレを立てる</button>
-            <button class="close-button" onclick="closeModal()">閉じる</button>
-        </div>
-    </div>
-
-    <script>
-        // --- モーダル制御関数（前回と同じ） ---
-        const modal = document.getElementById('threadModal');
-        
-        function openModal() {
-            modal.style.display = 'flex';
-        }
-
-        function closeModal() {
-            modal.style.display = 'none';
-        }
-
-        function submitThread() {
-            const name = document.getElementById('threadName').value;
-            const title = document.getElementById('threadTitle').value;
-            const body = document.getElementById('threadBody').value;
-            
-            if (title.trim() === '' || body.trim() === '') {
-                alert('（´A｀）スレタイか本文が空だぞ！しっかり書けよ！');
-                return;
-            }
-
-            const result = `(ﾟ∀ﾟ) 成功！\n\n【タイトル】 ${title}\n【名前】 ${name}\n【本文】\n${body}\n\nこの情報はポートフォリオのコンセプトデモです。実際に外部に送信はされません。`;
-            alert(result);
-            
-            document.getElementById('threadTitle').value = '';
-            document.getElementById('threadEmail').value = '';
-            document.getElementById('threadBody').value = '';
-            closeModal();
-        }
-
-        // --- 安価（アンカー）ギミック ---
-        function quoteRes(resNumber) {
-            // 対象のレス番号に対応する要素（例: res1, res2...）を取得
-            const resElement = document.getElementById(`res${resNumber}`);
-            if (!resElement) {
-                alert(`>>${resNumber} のレスは見つからないんだお...`);
-                return;
-            }
-
-            // レスの内容（本文）を取得
-            // res-body-content内のテキストを取得する
-            const resBodyContent = resElement.querySelector('.res-body-content');
-            let resText = resBodyContent.innerText.trim();
-            
-            // 長すぎる場合は少し短縮
-            if (resText.length > 200) {
-                resText = resText.substring(0, 200) + '...';
-            }
-
-            // 引用形式に整形
-            const quote = `>>${resNumber}\n> ${resText.replace(/\n/g, '\n> ')}\n\n`;
-
-            // 問い合わせフォームの本文（textarea）に引用内容をセット
-            const contactBody = document.getElementById('contactBody');
-            
-            // 既に本文に何か書かれていたら改行して追加、なければそのまま
-            contactBody.value = contactBody.value.trim() === '' ? quote : contactBody.value + '\n\n' + quote;
-            
-            // フォームまでスムーズにスクロール
-            const contactSection = document.getElementById('contact');
-            contactSection.scrollIntoView({ behavior: 'smooth' });
-
-            // フォームにフォーカス
-            contactBody.focus();
-        }
-        
-        // --- 連絡先フォームの擬似送信処理 ---
-        function submitContactRes() {
-            const name = document.getElementById('contactName').value || '名無しさん';
-            const body = document.getElementById('contactBody').value;
-            const email = document.getElementById('contactEmail').value;
-
-            if (body.trim() === '') {
-                alert('（´A｀）本文が空だぞ！何も書かないのか？');
-                return;
-            }
-
-            // 擬似的にレス投稿成功メッセージを表示
-            const result = `(ﾟ∀ﾟ) 書き込み完了！\n\n【名前】 ${name}\n【E-mail】 ${email}\n【本文】\n${body}\n\nこの書き込みはデモであり、実際には送信されません。`;
-            alert(result);
-
-            // フォームをリセット
-            document.getElementById('contactName').value = '';
-            document.getElementById('contactEmail').value = '';
-            document.getElementById('contactBody').value = '';
-        }
-
-    </script>
-</body>
-</html>
