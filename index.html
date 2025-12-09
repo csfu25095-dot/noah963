@@ -191,6 +191,9 @@
             margin-bottom: 25px;
             font-family: 'ＭＳ ゴシック', 'MS Gothic', monospace;
             font-size: 14px;
+            display: flex; /* 写真とテキストを横並びにするため */
+            align-items: flex-start; /* 上揃え */
+            gap: 20px; /* 写真とテキストの間隔 */
         }
         .profile-box h2 {
             font-size: 1.2rem;
@@ -199,10 +202,36 @@
             border-bottom: 2px dashed #ffcc00;
             padding-bottom: 5px;
             text-align: center;
+            width: 100%; /* タイトルを幅いっぱいに広げる */
+            order: -1; /* タイトルを一番上に配置 */
         }
         .profile-box h2::before {
             content: '【公式】';
             color: #000080;
+        }
+        .profile-image-container {
+            flex-shrink: 0; /* 縮小しない */
+            width: 120px; /* 画像の幅 */
+            height: 120px; /* 画像の高さ */
+            background-color: #e0e0e0; /* 画像がない場合の背景 */
+            border: 1px solid #cccccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* 画像がはみ出さないように */
+        }
+        .profile-image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; /* 縦横比を維持して要素を埋める */
+        }
+        .profile-image-container .placeholder-text {
+            color: #666;
+            font-size: 0.8em;
+            text-align: center;
+        }
+        .profile-details {
+            flex-grow: 1; /* 残りのスペースを埋める */
         }
         .profile-item {
             display: flex;
@@ -377,3 +406,268 @@
             <h1>【悲報】ワイ、チート級の適応力で目標達成ｗｗｗｗｗｗ</h1>
             <p>（*ﾟ∀ﾟ）アヒャｗｗｗ大学生のポートフォリオ</p>
             <a href="#contact" class="contact-button">レスを書き込む</a>
+            <pre class="aa">
+　　　　　　　　ｱﾋｬ
+　　＿　∧ ∧
+／＼　 (*ﾟ∀ﾟ)＼
+＼／|￣ U U ￣|＼
+　 ＼|　 つー 　 |
+　　　 ￣￣￣￣</pre>
+        </section>
+
+        <section id="profile" class="profile-box">
+            <h2>個人プロフィール</h2>
+            <div class="profile-image-container">
+                <span class="placeholder-text">画像は<br>ここやで</span>
+            </div>
+            <div class="profile-details">
+                <div class="profile-item">
+                    <strong>ハンドルネーム:</strong> <span>宮田楓也</span>
+                </div>
+                <div class="profile-item">
+                    <strong>所属:</strong> <span>日本大学 理工学部 応用情報工学科</span>
+                </div>
+                <div class="profile-item">
+                    <strong>卒業見込み:</strong> <span>202X年3月</span>
+                </div>
+                <div class="profile-item">
+                    <strong>連絡先:</strong> <span>(下記フォームよりレス投下してクレメンス)</span>
+                </div>
+            </div>
+        </section>
+
+        <div id="res1" class="res-entry">
+            <div class="res-head">
+                1 ：<span class="name">宮田楓也＠日大理工応情</span>[]：<span class="date">2025/12/01(月) 10:00:00</span> ID:MIYATA-F <a class="res-number" onclick="quoteRes(1)">**>>1**</a>
+            </div>
+            <div class="res-body-content">
+                <h3>なんかキタコレ！学習へのスタンス</h3>
+                <p>日本大学理工学部応用情報工学科に所属してるんやで。新しい知識や技術、マジパネェって感じでいつも漁ってるｗｗｗ。目標決めたら、そこまでの道のり全部設計して、実行するの得意なんやで？ドヤ顔(｀・ω・´)キリッ！</p>
+                
+                <div class="gacuchika-box">
+                    <strong>【ガチ】ワイの学生時代、伝説すぎワロタｗｗｗ（適応力と計画的実行力）</strong>
+                    <p>ワイが学生時代に注力したのは、高校吹奏楽部での**トロンボーンとバストロンボーンへの挑戦**や。</p>
+                    <p>三年ぶりに管楽器を再開し音色が不安定な中、「低音域からチームに貢献したい」と**自らバストロンボーンへの挑戦を決断**した。これ、マジレスやで。いち早くチームの戦力となるため、「両楽器で安定した響きを早期に習得する」という**リア充目標**を掲げた。</p>
+                    <p>この目標達成のため、部に来た**プロの指導者へ積極的に質問**し、ブランク解消と低音強化に必要な基礎練習法を徹底的に聞き出した。**プロに凸**したんやで？そのアドバイスを基に、**練習時間を「量より質」で細分化する計画**を立て、毎日客観的な評価を取り入れながら実行した。これがワイのPDCAや！</p>
+                    <p>結果、演奏会では両楽器で早期に安定した音色を出せるようになり、チームの土台を支えることに貢献できた。この経験から、**目標達成に向け自ら挑戦を選び、専門知識を活用して計画的に実行する適応力**を培ったんや。つまり、ワイは神！</p>
+                    <pre class="aa">
+  　　　＿＿＿_∧∧　　／￣￣￣￣￣￣￣￣
+　～'　＿＿__(,,ﾟДﾟ)＜　逝ってよし！
+　　 ＵU 　 　Ｕ U　　　＼＿＿＿＿＿＿＿＿
+</pre>
+                </div>
+            </div>
+        </div>
+
+        <div id="res2" class="res-entry">
+            <div class="res-head">
+                2 ：<span class="name">宮田楓也＠日大理工応情</span>[]：<span class="date">2025/12/01(月) 10:00:05</span> ID:MIYATA-F <a class="res-number" onclick="quoteRes(2)">**>>2**</a>
+            </div>
+            <div class="res-body-content">
+                <h2>ワイのチート能力（スキルと強み）</h2>
+                <div class="skill-grid">
+                    <div class="skill-item"><h4>(ﾟ∀ﾟ)計画・実行力</h4><p>目標から逆算してタスク化。おｋ？完璧な実行マニュアルを作成するで。</p></div>
+                    <div class="skill-item"><h4>（´・ω・｀）適応力</h4><p>未経験楽器も余裕でしたｗｗｗ新しいことでもすぐマスターするんや！</p></div>
+                    <div class="skill-item"><h4>（#^ω^）分析力</h4><p>感覚じゃなくて、**プロの意見とデータ**を信じる。これ、常識やろ？情弱乙！</p></div>
+                    <div class="skill-item"><h4>(´･ω･`)ﾉｼ 支え屋</h4><p>チームの土台を陰で支える。ワイがいなきゃ成り立たないんやからなっ！</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="res3" class="res-entry">
+            <div class="res-head">
+                3 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:03:15</span> ID:ABCD-1234 <a class="res-number" onclick="quoteRes(3)">**>>3**</a>
+            </div>
+            <div class="res-body-content">
+                <p>長文乙ｗｗｗトロンボーンと就活関係あんの？</p>
+                <p>マジレスすると、**>>1**のPDCAとかいうやつ、普通に生きてりゃ誰でもやってるやろ。大したことなくてワロタｗｗｗ</p>
+            </div>
+        </div>
+
+        <div id="res4" class="res-entry">
+            <div class="res-head">
+                4 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:04:40</span> ID:EFGH-5678 <a class="res-number" onclick="quoteRes(4)">**>>4**</a>
+            </div>
+            <div class="res-body-content">
+                <p>いや、**>>3**はエアプ。ブランクからプロに聞くっていう行動力と、それをPDCAって言語化してるのは偉いだろ。</p>
+                <p>しかもバストロもやってんの？すげーな。**>>1**はスペック高いんちゃうか？</p>
+            </div>
+        </div>
+        
+        <div id="res5" class="res-entry">
+            <div class="res-head">
+                5 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:06:01</span> ID:Giko-0001 <a class="res-number" onclick="quoteRes(5)">**>>5**</a>
+            </div>
+            <div class="res-body-content">
+                <p>ワイ、このスレ応援するで！</p>
+                <pre class="aa">
+ 　　　　　　　　　　　　　∩＿＿＿∩
+　　　　　　　　　　　　　|ノ　　　ヽ　|
+　　　　　　　　　　　　 /⌒ノ"~ヽ⌒ i
+　　　　　　　　　　　　|　(●)　(●)　|
+　　　　　　　　　　　　|　 (_人_)　　 |
+　　　　　　　　　　　　|　　｀ ⌒´　　|
+　　　　　　　　　　　　ヽ　　　　　　/
+　　　　　　　　　　　　　ヽ＿＿ ノ
+</pre>
+            </div>
+        </div>
+        
+        <div id="res6" class="res-entry">
+            <div class="res-head">
+                6 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:08:30</span> ID:HAHA-6666 <a class="res-number" onclick="quoteRes(6)">**>>6**</a>
+            </div>
+            <div class="res-body-content">
+                <p>トロンボーンとか、楽器なんて趣味やろ。</p>
+                <p>情報工学科なら、**「ワイはPythonで〇〇作って、アルゴリズムを改善した」**とか、**「応用情報技術者試験に合格した」**とか、**技術的な実績**でオレツエーしろよ。</p>
+                <p>楽器の話しかねーのかよｗｗｗまさか情弱！？</p>
+            </div>
+        </div>
+
+        <div id="res7" class="res-entry">
+            <div class="res-head">
+                7 ：<span class="name">宮田楓也＠日大理工応情</span>[]：<span class="date">2025/12/01(月) 10:10:05</span> ID:MIYATA-F <a class="res-number" onclick="quoteRes(7)">**>>7**</a>
+            </div>
+            <div class="res-body-content">
+                <p>えーと、**>>6**の指摘はごもっともっすね。マジレス感謝や！</p>
+                <p>技術的な強みについては**>>2**に軽く書いてるけど、確かに具体的な成果がないとメシウマじゃないっすね。</p>
+                <p>現在、情報工学の学習過程での**具体的な制作物**をポートフォリオに組み込み中なんで、完成したら報告させてもらうで！</p>
+                <p>（´・ω・｀）しょぼーん。技術面もがんばるんや！</p>
+            </div>
+        </div>
+        
+        <div id="res8" class="res-entry">
+            <div class="res-head">
+                8 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:12:45</span> ID:TARO-0000 <a class="res-number" onclick="quoteRes(8)">**>>8**</a>
+            </div>
+            <div class="res-body-content">
+                <p>トロンボーンの話は、**課題解決能力や継続性のアピール**として十分伝わったで。**>>1**は頭の回転早そうやな。</p>
+                <p>技術的な成果は、**インターン**とかで得ると最強だから、頑張って！</p>
+                <p>つーかこのポートフォリオのノリ、マジでワロタｗｗｗ</p>
+            </div>
+        </div>
+        
+        <div id="res9" class="res-entry">
+            <div class="res-head">
+                9 ：名無しさん＠就活なう[]：<span class="date">2025/12/01(月) 10:15:00</span> ID:Owari-0000 <a class="res-number" onclick="quoteRes(9)">**>>9**</a>
+            </div>
+            <div class="res-body-content">
+                <p>ageとくで。落ちたらまた立てろや！</p>
+            </div>
+        </div>
+
+        <section id="contact">
+            <h2>>>10: レス投稿フォーム</h2>
+            <p>ワイの最強スキルにマジレスするもよし、メシウマ案件を提示するもよし！</p>
+            <table>
+                <tr>
+                    <td>名前:</td>
+                    <td><input type="text" id="contactName" value="" placeholder="空欄で「名無しさん」"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" id="contactEmail" placeholder="任意"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">本文:</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea id="contactBody" placeholder="（´A｀）本文を書き込むんや..."></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button onclick="submitContactRes()">書き込み（送信）</button>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: #cc0000;">※この書き込みはデモであり、ポートフォリオサイト管理者には実際には送信されません。</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>（´・ω・｀）しょぼーん。無断転載禁止（建前）</p>
+        <p>（　´∀｀）つ旦~~ お茶どうぞ</p>
+    </footer>
+
+    <div id="threadModal" class="modal-overlay">
+        <div class="thread-form-box">
+            <h3>( ﾟДﾟ)＜新規スレ立てはコチラ！</h3>
+            <table>
+                <tr>
+                    <td>名前:</td>
+                    <td><input type="text" id="threadName" value="宮田楓也＠日大理工応情"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" id="threadEmail" placeholder="メシウマなアドレス希望ｗｗｗ"></td>
+                </tr>
+                <tr>
+                    <td>スレタイ:</td>
+                    <td><input type="text" id="threadTitle" placeholder="【>>1】タイトルをしっかり書けよ！"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">本文:</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea id="threadBody" placeholder="（´・ω・｀）本文を書き込むんや..."></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button onclick="submitThread()">スレを立てる</button>
+            <button class="close-button" onclick="closeModal()">閉じる</button>
+        </div>
+    </div>
+
+    <script>
+        // --- モーダル制御関数（前回と同じ） ---
+        const modal = document.getElementById('threadModal');
+        
+        function openModal() {
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function submitThread() {
+            const name = document.getElementById('threadName').value;
+            const title = document.getElementById('threadTitle').value;
+            const body = document.getElementById('threadBody').value;
+            
+            if (title.trim() === '' || body.trim() === '') {
+                alert('（´A｀）スレタイか本文が空だぞ！しっかり書けよ！');
+                return;
+            }
+
+            const result = `(ﾟ∀ﾟ) 成功！\n\n【タイトル】 ${title}\n【名前】 ${name}\n【本文】\n${body}\n\nこの情報はポートフォリオのコンセプトデモです。実際に外部に送信はされません。`;
+            alert(result);
+            
+            document.getElementById('threadTitle').value = '';
+            document.getElementById('threadEmail').value = '';
+            document.getElementById('threadBody').value = '';
+            closeModal();
+        }
+
+        // --- 安価（アンカー）ギミック ---
+        function quoteRes(resNumber) {
+            // 対象のレス番号に対応する要素（例: res1, res2...）を取得
+            const resElement = document.getElementById(`res${resNumber}`);
+            if (!resElement) {
+                alert(`>>${resNumber} のレスは見つからないんや...`);
+                return;
+            }
+
+            // レスの内容（本文）を取得
+            const resBodyContent = resElement.querySelector('.res-body-content');
+            let resText = resBodyContent.innerText.trim();
+            
+            // 長すぎる場合は少し短縮
+            if (resText.length > 200) {
+                resText = resText.substring(0, 200) + '...';
+            }
+
+            // 引用形式に整形
+            const quote = `>>${resNumber}\n> ${resText.replace(/\n/g, '\n> ')}\n\n`;
+
+            //
